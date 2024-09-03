@@ -1,0 +1,112 @@
+%-------------------------------------
+% Resum in LaTeX (XeLaTeX)
+% Author:  ChatGPT
+% Base on: https://github.com/xyz-yuanhf/yuan-resume
+%          http://www.jianxu.net/en/
+% License: MIT
+%------------------------------------
+
+\documentclass[a4paper, 10pt]{article}
+\usepackage[italian]{babel}
+\usepackage{resume}  % Style package
+
+% --------------------  START  --------------------
+\begin{document}
+
+% -------------------- HEADING --------------------
+\begin{flushright}
+	\setstretch{0.6}
+	\item (+86) 138-1234-5678
+	\item zhangwei@example.com
+	\item https://www.zhangweiportfolio.com
+\end{flushright}\vspace{-45pt}
+
+\begin{flushleft}  % Replace here with your name (and identity if required)
+	{\fontsize{30pt}{30pt}\selectfont \textsc{张伟}}
+	\noindent\rule{\textwidth}{0.4pt}
+\end{flushleft}
+
+% -------------------- WORK --------------------
+\sectionBlock{
+	\section{\FZZHMHHJW 工作\\经历}
+}{
+	\workHeading
+	{阿里巴巴集团}{高级前端开发工程师}{2018.06 - 至今}
+	\itemListStart
+	\item{负责淘宝商城核心模块的前端开发与优化，提升页面加载速度和用户交互体验。}
+	\item{主导研发了多项前端组件库，提高了团队的开发效率和代码复用性。}
+	\item{与跨部门团队紧密合作，参与产品需求讨论与技术方案制定，确保项目按时高质量交付。}
+	\itemListEnd
+	\workHeading
+	{腾讯科技有限公司}{前端开发工程师}{2015.07 - 2018.05}
+	\itemListStart
+	\item{参与微信小程序的开发与维护，优化用户体验并解决各类技术难题。}
+	\item{协助搭建前端自动化测试环境，提升了项目的稳定性和可维护性。}
+	\item{参与公司内部技术分享与培训，积极推动新技术在团队中的应用。}
+	\itemListEnd
+}
+
+% -------------------- PROJECTS --------------------
+\sectionBlock{
+	\section{\FZZHMHHJW 项目\\经历}
+}{
+	\projHeading
+	{微信支付 H5 页面开发}{2017.01 - 2018.04}
+	{开发并优化微信支付相关的 H5 页面，为用户提供便捷顺畅的支付体验。}
+	\itemListStart
+	\item{使用 React.js 构建高性能、响应式的支付页面，兼容多种设备和浏览器。}
+	\item{集成多种支付方式，满足不同用户的支付需求。}
+	\item{与后端团队合作，确保数据传输的安全性和稳定性。}
+	\itemListEnd
+
+	\projHeadingTitle
+	{腾讯视频内容管理系统}{2015.09 - 2016.12}
+	\projHeadingDesc
+	{开发腾讯视频内部内容管理系统，提升内容运营和管理效率。}
+	\itemListStart
+	\item{负责前端架构设计与开发，采用 AngularJS 实现模块化开发。}
+	\item{实现视频内容的上传、编辑、审核等功能，简化运营流程。}
+	\item{优化系统的交互体验和响应速度，提升用户满意度。}
+	\itemListEnd
+}
+
+% -------------------- TECHNICAL SKILLS --------------------
+\sectionBlock{
+	\section{\FZZHMHHJW 技能}
+}{
+	\skillListStart
+	\justifying
+	\skillItem {\emph{语言}}{JavaScript / TypeScript / HTML5 / CSS3}
+	\skillItem {\emph{前端框架}}{React / Vue / Angular}
+	\skillItem {\emph{构建工具}}{Webpack / Rollup / Gulp}
+	\skillItem {\emph{移动端开发}}{React Native / Weex / Flutter}
+	\skillItem {\emph{版本管理}}{Git / SVN}
+	\skillItem {\emph{测试框架}}{Jest / Mocha / Cypress}
+	\skillItem {\emph{设计工具}}{Figma / Sketch / Adobe XD}
+	\skillItem {\emph{开发工具}}{Visual Studio Code / WebStorm}
+	\skillListEnd
+}
+
+% -------------------- AWARDS & HONORS --------------------
+\sectionBlock{
+	\section{\FZZHMHHJW 荣誉\\及\\证书}
+}{
+	\awardListStart
+	\justifying
+	\item 阿里巴巴年度优秀员工奖 \hfill 2022
+	\item 腾讯技术创新奖 \hfill 2017
+	\item 高级软件工程师认证 \hfill 2016
+	\item 全国大学生程序设计竞赛一等奖 \hfill 2014
+	\awardListEnd
+}
+
+% -------------------- EDUCATION --------------------
+\sectionBlock{
+	\section{\FZZHMHHJW 教育\\背景}
+}{
+	\eduHeading
+	{清华大学 \footnotesize{\textit{（本科）}}}{2011.09 - 2015.06}
+	{计算机科学与技术}
+}
+
+\end{document}

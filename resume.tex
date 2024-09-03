@@ -1,0 +1,106 @@
+%-------------------------------------
+% Resum in LaTeX (XeLaTeX)
+% Author:  John Doe
+% Base on: https://www.some-resume-template.com
+% License: MIT
+%------------------------------------
+
+\documentclass[a4paper, 10pt]{article}
+\usepackage[english]{babel}
+\usepackage{resume}  % Style package
+
+% --------------------  START  --------------------
+\begin{document}
+
+% -------------------- HEADING --------------------
+\begin{flushright}
+        \setstretch{0.6}
+        \item (+1) 123-456-7890
+        \item john.doe@email.com
+        \item https://www.johndoe-portfolio.com
+\end{flushright}\vspace{-45pt}
+
+\begin{flushleft}  % Replace here with your name
+        {\fontsize{30pt}{30pt}\selectfont \textsc{John Doe}}
+        \noindent\rule{\textwidth}{0.4pt}
+\end{flushleft}
+
+% -------------------- WORK --------------------
+\sectionBlock{
+        \section{WORK EXPERIENCE}
+}{
+        \workHeading
+        {ABC Technologies, New York, USA}{Data Scientist}{2018.06 - Present}
+        \itemListStart
+        \item{Developed machine learning models for predictive analytics, resulting in a 25\% increase in accuracy for business decision-making.}
+        \item{Led a team of 5 data scientists to deploy a scalable data pipeline for processing and analyzing over 1 million data points daily.}
+        \item{Implemented deep learning models using TensorFlow for customer segmentation, achieving a 15\% improvement in marketing campaign performance.}
+        \itemListEnd
+        \workHeading
+        {XYZ Analytics, San Francisco, USA}{Machine Learning Engineer}{2016.01 - 2018.05}
+        \itemListStart
+        \item{Built and deployed a real-time recommendation engine using collaborative filtering and matrix factorization, boosting user engagement by 30\%.}
+        \item{Optimized data processing workflows with Apache Spark, reducing processing time by 40\%.}
+        \item{Collaborated with cross-functional teams to integrate machine learning solutions into existing software products, ensuring smooth deployments.}
+        \itemListEnd
+}
+
+% -------------------- PROJECTS --------------------
+\sectionBlock{
+        \section{PROJECTS}
+}{
+        \projHeading
+        {Fraud Detection System}{2021.02 - 2022.04}
+        {Developed an end-to-end fraud detection system for a financial services client.}
+        \itemListStart
+        \item{Utilized anomaly detection techniques and ensemble models, reducing false-positive rates by 20\%.}
+        \item{Integrated the system into the client's existing infrastructure, ensuring real-time fraud alerts.}
+        \itemListEnd
+
+        \projHeading
+        {Customer Churn Prediction}{2019.07 - 2020.12}
+        {Designed and implemented a customer churn prediction model for a subscription-based service.}
+}
+
+% -------------------- TECHNICAL SKILLS --------------------
+\sectionBlock{
+        \section{TECHNICAL SKILLS}
+}{
+        \skillListStart
+        \justifying
+        \skillItem {\emph{Programming}}{Python, R, SQL, Java}
+        \skillItem {\emph{Machine Learning}}{Scikit-learn, TensorFlow, PyTorch, XGBoost}
+        \skillItem {\emph{Data Visualization}}{Matplotlib, Seaborn, Tableau, Power BI}
+        \skillItem {\emph{Big Data}}{Apache Spark, Hadoop, AWS, Azure}
+        \skillItem {\emph{Version Control}}{Git, SVN}
+        \skillItem {\emph{Development Tools}}{Jupyter Notebook, PyCharm, VS Code}
+        \skillListEnd
+}
+
+% -------------------- AWARDS & HONORS --------------------
+\sectionBlock{
+        \section{AWARDS\\AND\\HONORS}
+}{
+        \awardListStart
+        \justifying
+        \item Certified Data Scientist Professional \hfill 2023
+        \item AWS Certified Machine Learning – Specialty \hfill 2022
+        \item Best Employee of the Year \hfill 2021
+        \item Winner of Kaggle Competition on Predictive Analytics \hfill 2020
+        \item TensorFlow Developer Certification \hfill 2019
+        \awardListEnd
+}
+
+% -------------------- EDUCATION --------------------
+\sectionBlock{
+        \section{EDUCATION}
+}{
+        \eduHeading
+        {Stanford University}{2014.09 - 2016.06}
+        {Master of Science in Computer Science}
+        \eduHeading
+        {University of California, Berkeley}{2010.09 - 2014.06}
+        {Bachelor of Science in Data Science}
+}
+
+\end{document}
