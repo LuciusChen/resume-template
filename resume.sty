@@ -27,6 +27,19 @@
 % 显示边界
 \overfullrule=1pt
 
+% width settings
+\newlength{\englishSectionWidth}
+\setlength{\englishSectionWidth}{2.7cm}
+
+\newlength{\chineseSectionWidth}
+\setlength{\chineseSectionWidth}{1.5cm}
+
+\newlength{\englishSkillWidth}
+\setlength{\englishSkillWidth}{10.7em}
+
+\newlength{\chineseSkillWidth}
+\setlength{\chineseSkillWidth}{4.7em}
+
 % Font settings
 \setmainfont{SabonLTStd}[
 	Path=./Fonts/Sabon/,
@@ -70,7 +83,7 @@
 % Section block
 \newcommand{\sectionBlock}[2]{%
 	\noindent
-	\begin{minipage}[t]{\iflanguage{english}{2.7cm}{1.5cm}}
+	\begin{minipage}[t]{\iflanguage{english}{\englishSectionWidth}{\chineseSectionWidth}}
 		\raggedright #1
 	\end{minipage}
 	\hfill
@@ -94,9 +107,9 @@
 % Skill list
 \newlength{\maxSkillWidth}
 \iflanguage{english}{%
-	\setlength{\maxSkillWidth}{10.7em}
+	\setlength{\maxSkillWidth}{\englishSkillWidth}
 }{
-	\setlength{\maxSkillWidth}{4.7em}
+	\setlength{\maxSkillWidth}{\chineseSkillWidth}
 }
 \newcommand{\skillListStart}{\begin{itemize}[leftmargin=0pt, label={}, itemsep=0pt]}
 		\newcommand{\skillListEnd}{\end{itemize}\vspace{-11pt}}
