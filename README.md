@@ -5,8 +5,8 @@ An elegant academic resume template, compiled with XeLaTeX. This project is a re
 ## Preview
 
 <p align="center">
-  <img src="preview/resume-zh.jpg" alt="First Image" style="width:45%;"/>
-  <img src="preview/resume.jpg" alt="Second Image" style="width:45%; margin-left: 10px;"/>
+  <img src="./preview/resume-zh.jpg" alt="First Image" style="width:45%;"/>
+  <img src="./preview/resume.jpg" alt="Second Image" style="width:45%; margin-left: 10px;"/>
 </p>
 
 ## Usage
